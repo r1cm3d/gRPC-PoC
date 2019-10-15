@@ -1,10 +1,3 @@
-{
-    id: string
-    first_name: string
-    last_name: string
-    date_of_birth: Date
-}
-
 CREATE TABLE user
 (
   id: UUID PRIMARY KEY NOT NULL,
