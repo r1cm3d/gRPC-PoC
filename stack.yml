@@ -1,0 +1,17 @@
+version: "3.3"
+
+services:
+  database:
+    restart: always
+    container_name: postgres
+    build:
+      context: ./database
+      dockerfile: Dockerfile
+    volumes:
+      - ./database/data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=grpc-poc
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
