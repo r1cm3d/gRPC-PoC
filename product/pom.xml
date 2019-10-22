@@ -17,6 +17,7 @@
     <properties>
         <java.version>11</java.version>
         <jacoco.version>0.8.4</jacoco.version>
+        <cucumber.version>4.7.4</cucumber.version>
         <coverage>0</coverage>
     </properties>
 
@@ -51,6 +52,18 @@
         <dependency>
             <groupId>org.hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>${cucumber.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
