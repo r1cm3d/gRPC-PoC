@@ -17,7 +17,7 @@
     <properties>
         <java.version>11</java.version>
         <jacoco.version>0.8.4</jacoco.version>
-        <spring-boot-crud.coverage>0</spring-boot-crud.coverage>
+        <coverage>0</coverage>
     </properties>
 
     <dependencies>
@@ -85,17 +85,17 @@
                                         <limit>
                                             <counter>LINE</counter>
                                             <value>COVEREDRATIO</value>
-                                            <minimum>${spring-boot-crud.coverage}</minimum>
+                                            <minimum>${coverage}</minimum>
                                         </limit>
                                         <limit>
                                             <counter>BRANCH</counter>
                                             <value>COVEREDRATIO</value>
-                                            <minimum>${spring-boot-crud.coverage}</minimum>
+                                            <minimum>${coverage}</minimum>
                                         </limit>
                                         <limit>
                                             <counter>METHOD</counter>
                                             <value>COVEREDRATIO</value>
-                                            <minimum>${spring-boot-crud.coverage}</minimum>
+                                            <minimum>${coverage}</minimum>
                                         </limit>
                                     </limits>
                                 </rule>
