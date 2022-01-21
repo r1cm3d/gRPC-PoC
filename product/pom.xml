@@ -20,7 +20,7 @@
         <cucumber.version>4.7.4</cucumber.version>
         <hamcrest.version>2.2</hamcrest.version>
         <lombok.version>1.18.10</lombok.version>
-        <h2.version>1.4.200</h2.version>
+        <h2.version>2.1.210</h2.version>
         <coverage>1</coverage>
     </properties>
 
